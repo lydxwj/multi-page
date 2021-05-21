@@ -1,0 +1,103 @@
+@import './base.scss';
+@import './variables.scss';
+@import "./mixin.scss";
+@import './transition.scss';
+@import './sidebar.scss';
+.p{
+  &-l{
+    &-10{
+      padding-left: 10px;
+    }
+    &-20{
+      padding-left: 20px;
+    }
+  }
+  &-r{
+    &-10{
+      padding-right: 10px;
+    }
+    &-20{
+      padding-right: 20px;
+    }
+  }
+  &-t{
+    &-10{
+      padding-top: 10px;
+    }
+    &-20{
+      padding-top: 20px;
+    }
+  }
+  &-b{
+    &-10{
+      padding-bottom: 10px;
+    }
+    &-20{
+      padding-bottom: 20px;
+    }
+  }
+}
+.m{
+  &-t{
+    &-10{
+      margin-top: 10px;
+    }
+    &-20{
+      margin-top: 20px;
+    }
+  }
+  &-l{
+    &-10{
+      margin-left: 10px;
+    }
+    &-20{
+      margin-left: 20px;
+    }
+  }
+  &-r{
+    &-10{
+      margin-right: 10px;
+    }
+    &-20{
+      margin-right: 20px;
+    }
+  }
+}
+.inline-block{
+  display: inline-block;
+}
+
+
+// main-container global css
+.page-container {
+  padding: 10px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @include scrollBar;
+}
+
+// 表格上面筛选区域
+.table-filter-place{
+  padding-bottom: 10px;
+  &-floor{
+    padding-bottom: 10px;
+  }
+}
+.title-center{
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+.form-container{
+  .form-area-title{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #409eff;
+  }
+}
